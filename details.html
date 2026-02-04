@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MUSLIM STUDENTS BOARD — Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">MUSLIM STUDENTS BOARD</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faculty">Faculty</a></li>
+        <li><a href="index.html#students">Students Corner</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section container" id="detail-home">
+      <h1>Details — Courses & Faculty</h1>
+      <p class="muted">More information about the programs and our esteemed faculty members.</p>
+    </section>
+
+    <section id="courses-detailed" class="section container">
+      <h2>Courses (Detailed)</h2>
+      <p class="muted">Each course is designed to support students academically and spiritually.</p>
+      <div class="grid two-col">
+        <div class="box">
+          <h3>Islamic Studies</h3>
+          <ul>
+            <li>Foundations of theology and creed</li>
+            <li>Quranic studies and Tajweed</li>
+            <li>Seerah and Islamic history</li>
+            <li>Ethics and moral development</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Academic Tutoring</h3>
+          <ul>
+            <li>Mathematics and Sciences tutoring</li>
+            <li>Language support (English/Urdu)</li>
+            <li>Exam preparation and study skills</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid cards" style="margin-top:16px">
+        <article class="card">
+          <h3>Leadership & Community Service</h3>
+          <p class="small">Workshops, practical projects, and leadership training that prepare students for community roles.</p>
+        </article>
+        <article class="card">
+          <h3>Special Programs</h3>
+          <p class="small">Seasonal workshops, seminars, and career guidance sessions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faculty-detailed" class="section container">
+      <h2>Faculty</h2>
+      <p class="muted">Our core faculty members who serve the institute.</p>
+      <div class="grid cards">
+        <article class="card">
+          <div class="avatar">HR</div>
+          <h3>Shaykh Haroon Rashid</h3>
+          <p class="small">Senior faculty member — Islamic scholar, teacher, and mentor with many years of experience.</p>
+        </article>
+        <article class="card">
+          <div class="avatar">MD</div>
+          <h3>Shaykh Muneer Ahmad Dar</h3>
+          <p class="small">Faculty — Focused on teaching and community engagement.</p>
+        </article>
+        <article class="card">
+          <div class="avatar">AM</div>
+          <h3>Shaykh Aijaz Ahmad Mir</h3>
+          <p class="small">Faculty — Student guidance and curriculum development.</p>
+        </article>
+        <article class="card">
+          <div class="avatar">VD</div>
+          <h3>Shaykh Vasim Ahmad Dar</h3>
+          <p class="small">Faculty — Lecturer and community outreach specialist.</p>
+        </article>
+      </div>
+      <p style="margin-top:12px"><a class="btn ghost" href="index.html#faculty">Back to Home — Faculty</a></p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p class="muted">Head Office: Nowgam, Srinagar</p>
+      <p>For inquiries and admissions, email: <a href="mailto:info@msb.org">info@msb.org</a> or call: +91-XXXXXXXXXX</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>MUSLIM STUDENTS BOARD</strong> — Established May 2006. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle (same script as index)
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if(toggle) toggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+  </script>
+</body>
+</html>

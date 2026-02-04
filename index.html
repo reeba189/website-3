@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MUSLIM STUDENTS BOARD — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#">MUSLIM STUDENTS BOARD</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#students">Students Corner</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>MUSLIM STUDENTS BOARD</h1>
+          <p class="lead">Established May 2006 — Head Office: Nowgam, Srinagar</p>
+          <p>Empowering students with knowledge, guidance, and opportunities to grow academically and spiritually.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#about">Learn More</a>
+            <a class="btn ghost" href="#courses">Our Courses</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Decorative SVG -->
+          <svg width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="300" height="220" rx="16" fill="rgba(255,255,255,0.06)" />
+            <circle cx="60" cy="70" r="40" fill="rgba(255,255,255,0.08)" />
+            <circle cx="220" cy="120" r="55" fill="rgba(255,255,255,0.06)" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p class="muted">MUSLIM STUDENTS BOARD was founded in May 2006 and continues to operate from its head office in Nowgam, Srinagar. We provide educational support, mentorship, and community programs for students at all levels.</p>
+    </section>
+
+    <section id="faculty" class="section container">
+      <h2>Faculty</h2>
+      <p class="muted">Meet our dedicated faculty who guide and mentor our students.</p>
+      <div class="grid cards">
+        <article class="card">
+          <div class="avatar">AR</div>
+          <h3>Prof. A. Rahman</h3>
+          <p class="small">Head of Academic Programs — Specialist in Islamic studies and curriculum development.</p>
+        </article>
+        <article class="card">
+          <div class="avatar">SR</div>
+          <h3>Dr. S. Raina</h3>
+          <p class="small">Student counseling and outreach coordinator.</p>
+        </article>
+        <article class="card">
+          <div class="avatar">MK</div>
+          <h3>Ms. M. Khan</h3>
+          <p class="small">Course facilitator and educational technologist.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="students" class="section container">
+      <h2>Students Corner</h2>
+      <p class="muted">A place for resources, announcements, and student services.</p>
+      <div class="grid two-col">
+        <div class="box">
+          <h3>Resources</h3>
+          <ul>
+            <li>Study materials and past papers</li>
+            <li>Mentorship programs</li>
+            <li>Scholarships and financial aid information</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Announcements</h3>
+          <ul>
+            <li>Orientation sessions</li>
+            <li>Admission dates</li>
+            <li>Workshops and seminars</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section container">
+      <h2>Courses</h2>
+      <p class="muted">We offer a range of courses to help students grow academically and personally.</p>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Islamic Studies</h3>
+          <p class="small">Foundations of theology, history, and ethics.</p>
+        </article>
+        <article class="card">
+          <h3>Academic Tutoring</h3>
+          <p class="small">Subject-wise tutoring for school and college students.</p>
+        </article>
+        <article class="card">
+          <h3>Leadership & Community Service</h3>
+          <p class="small">Training students to be active, responsible community members.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact & Head Office</h2>
+      <p class="muted">Head Office: Nowgam, Srinagar</p>
+      <p>For inquiries and admissions, email: <a href="mailto:info@msb.org">info@msb.org</a> or call: +91-XXXXXXXXXX</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>MUSLIM STUDENTS BOARD</strong> — Established May 2006. All rights reserved.</p>
+      <p class="muted">Designed for both laptop and mobile — responsive and accessible.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // close mobile nav
+        if (navLinks.classList.contains('open')) navLinks.classList.remove('open');
+      });
+    });
+
+    // Highlight current section in nav (simple approach)
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 80;
+      sections.forEach(section => {
+        const id = section.getAttribute('id');
+        const link = document.querySelector(`.nav a[href="#${id}"]`);
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+          if (link) link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -17,15 +17,16 @@ body{background:var(--bg-gradient);color:#eaf6f6;line-height:1.6;-webkit-font-sm
 .nav-links a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:6px}
 .nav-links a:hover,.nav-links a.active{background:rgba(255,255,255,0.06);color:#fff}
 .hero{padding:60px 0}
-.hero-content{display:flex;gap:28px;align-items:center}
-.hero-text{flex:1}
+.hero-content{display:flex;gap:28px;align-items:center;justify-content:space-between}
+.hero-text{flex:1;min-width:0}
 .hero h1{font-size:36px;margin:0 0 8px}
 .lead{color:#e0f4f1;font-weight:600}
 .hero p{max-width:60ch}
 .hero-cta{margin-top:18px;display:flex;gap:12px}
 .btn{background:#fff;color:var(--dark-blue);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff}
-.hero-visual{width:300px;flex-shrink:0}
+.hero-visual{display:flex;align-items:center;justify-content:center;width:320px;height:320px;flex-shrink:0}
+.logo-image{width:100%;height:100%;object-fit:contain}
 .section{padding:36px 0}
 .section h2{margin-top:0;font-size:22px}
 .muted{color:rgba(255,255,255,0.85)}

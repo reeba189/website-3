@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="300" height="300">
+  <!-- Outer circle background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3b8c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2563;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Blue background circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGradient)"/>
+  
+  <!-- Outer ring with text -->
+  <path id="topPath" d="M 50,200 A 150,150 0 0,1 350,200" fill="none"/>
+  <path id="bottomPath" d="M 350,200 A 150,150 0 0,1 50,200" fill="none"/>
+  
+  <text font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" letter-spacing="2">
+    <textPath href="#topPath" startOffset="50%" text-anchor="middle">
+      MUSLIM STUDENTS BOARD
+    </textPath>
+  </text>
+  
+  <text font-family="Arial, sans-serif" font-size="14" fill="white" letter-spacing="1">
+    <textPath href="#bottomPath" startOffset="50%" text-anchor="middle">
+      2006
+    </textPath>
+  </text>
+  
+  <!-- White background for book -->
+  <rect x="80" y="80" width="240" height="200" rx="8" fill="white"/>
+  
+  <!-- Green book shape -->
+  <path d="M 120 100 L 280 100 L 280 240 L 120 240 Z" fill="#10b981"/>
+  
+  <!-- Book pages (lines radiating from center top) -->
+  <g stroke="#4ade80" stroke-width="2" opacity="0.6">
+    <line x1="200" y1="100" x2="150" y2="240"/>
+    <line x1="200" y1="100" x2="160" y2="240"/>
+    <line x1="200" y1="100" x2="170" y2="240"/>
+    <line x1="200" y1="100" x2="180" y2="240"/>
+    <line x1="200" y1="100" x2="190" y2="240"/>
+    <line x1="200" y1="100" x2="200" y2="240"/>
+    <line x1="200" y1="100" x2="210" y2="240"/>
+    <line x1="200" y1="100" x2="220" y2="240"/>
+    <line x1="200" y1="100" x2="230" y2="240"/>
+    <line x1="200" y1="100" x2="240" y2="240"/>
+    <line x1="200" y1="100" x2="250" y2="240"/>
+  </g>
+  
+  <!-- Urdu text on book (simplified representation) -->
+  <text font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold" text-anchor="middle">
+    <tspan x="200" y="160">علم و</tspan>
+    <tspan x="200" y="190">عمل</tspan>
+  </text>
+  
+  <!-- Sun rays above book -->
+  <g stroke="#10b981" stroke-width="3" opacity="0.4">
+    <line x1="200" y1="60" x2="200" y2="40"/>
+    <line x1="230" y1="70" x2="245" y2="55"/>
+    <line x1="170" y1="70" x2="155" y2="55"/>
+  </g>
+  
+  <!-- Decorative diamond shape -->
+  <circle cx="200" cy="95" r="6" fill="#10b981"/>
+</svg>
